@@ -13,29 +13,29 @@ public class Calcular {
 		
 		Random rand = new Random();
 		
-		this.operacao = rand.nextInt(3); // 0 - somar, 1 - diminuir, 2 - multiplicar
+		this.operacao = rand.nextInt(3);
 		this.dificuldade = dificuldade;
 		
 		if(dificuldade == 1) {
 			//fÃ¡cil
-			this.valor1 = rand.nextInt(10); //0 a 9
-			this.valor2 = rand.nextInt(10); //0 a 9
+			this.valor1 = rand.nextInt(10);
+			this.valor2 = rand.nextInt(10);
 		}else if(dificuldade == 2) {
 			//mÃ©dio
-			this.valor1 = rand.nextInt(100); //0 a 99
-			this.valor2 = rand.nextInt(100); //0 a 99
+			this.valor1 = rand.nextInt(100);
+			this.valor2 = rand.nextInt(100);
 		}else if(dificuldade == 3) {
 			//difÃ­cil
-			this.valor1 = rand.nextInt(1000); //0 a 999
-			this.valor2 = rand.nextInt(1000); //0 a 999
+			this.valor1 = rand.nextInt(1000);
+			this.valor2 = rand.nextInt(1000);
 		}else if(dificuldade == 4) {
 			//insano
-			this.valor1 = rand.nextInt(10000); //0 a 9999
-			this.valor2 = rand.nextInt(10000); //0 a 9999
+			this.valor1 = rand.nextInt(10000); 
+			this.valor2 = rand.nextInt(10000);
 		}else{
 			//Ãºltra
-			this.valor1 = rand.nextInt(100000); //0 a 99999
-			this.valor2 = rand.nextInt(100000); //0 a 99999
+			this.valor1 = rand.nextInt(100000);
+			this.valor2 = rand.nextInt(100000);
 		}
 	}
 	public int getDificuldade() {
@@ -63,12 +63,12 @@ public class Calcular {
 		}else if(this.getOperacao() == 2) {
 			op = "Multiplicar";
 		}else {
-			op = "Operação desconhecida";
+			op = "Operaï¿½ï¿½o desconhecida";
 		}
 		return "Valor 1: " + this.getValor1() +
 				"\nValor 2: " + this.getValor2() +
 				"\nDificuldade: " + this.getDificuldade() + 
-				"\nOperação: " + op;
+				"\nOperaï¿½ï¿½o: " + op;
 	}
 	
 	public boolean somar(int resposta) {
